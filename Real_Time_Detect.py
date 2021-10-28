@@ -21,8 +21,8 @@ MODEL.eval()
 BUFF_SIZE = 65536
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, BUFF_SIZE)
-host_ip = '192.168.56.1'
-port = 9999
+host_ip = ''    # Enter Your IP
+port = 9999     # Enter Your Port
 socket_address = (host_ip, port)
 server_socket.bind(socket_address)
 print(f"listing at:{socket_address}")
