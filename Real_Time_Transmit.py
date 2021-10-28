@@ -6,8 +6,8 @@ import base64
 BUFF_SIZE = 65536
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, BUFF_SIZE)
-host_ip = ''        # Enter Your IP
-port = 9999         # Enter Your Port 
+host_ip = '127.0.0.1'       
+port = 9999         
 
 
 vid = cv2.VideoCapture(0)
