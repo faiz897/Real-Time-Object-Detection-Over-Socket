@@ -33,8 +33,6 @@ while True:
     npdata = np.frombuffer(data, dtype=np.uint8)
     frame = cv2.imdecode(npdata, 1)
 
-    cv2.imshow("intermediate", frame)
-
     orig = frame.copy()
 
     source = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
